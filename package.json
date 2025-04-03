@@ -1,0 +1,36 @@
+{
+  "name": "smartrecipe",
+  "version": "1.0.0",
+  "main": "App.js",
+  "scripts": {
+    "start": "concurrently \"webpack serve --mode development\" \"nodemon server/server.js\"",
+    "compile": "npx webpack",
+    "watch": "babel src --out-dir public --watch --verbose",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Sariha",
+  "license": "ISC",
+  "description": "Recipe Generator",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "mysql2": "^3.14.0",
+    "nodemon": "^3.1.9",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.27.0",
+    "@babel/core": "^7.26.10",
+    "@babel/preset-env": "^7.26.9",
+    "@babel/preset-react": "^7.26.3",
+    "babel-loader": "^10.0.0",
+    "concurrently": "^9.1.2",
+    "css-loader": "^7.1.2",
+    "file-loader": "^6.2.0",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.1"
+  }
+}
